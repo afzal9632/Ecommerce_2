@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="products.css" />
+    <title>Document</title>
+    <style>
+      #cont {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto;
+      }
+      #cont > div {
+        border: 2px solid red;
+        text-align: center;
+        margin: auto;
+      }
+      #cont > div > img {
+        height: 64%;
+        width: 100%;
+      }
+
+      #list {
+        background-color: rgb(240, 18, 18);
+        padding: 5px 20px;
+        border-radius: 20px;
+      }
+
+      #list > a {
+        color: white;
+        font: bold;
+        font-size: 15px;
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <button id="list"><a href="index.html">Add Products</a></button>
+    <div id="counter"></div>
+    <div id="cont"></div>
+  </body>
+</html>
+<script src="products.js"></script>
